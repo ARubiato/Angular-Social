@@ -1,21 +1,21 @@
 <div *ngIf="!(auth.user | async); else alreadyLoggedIn">
 
-  <h3>Social Login</h3>
+  <h3>Select login type</h3>
 
     <button (click)="signInWithGoogle()" class="button btn-social btn-google">
-      <i class="fa fa-google fa-lg"></i> Connect Google
+      <i class="fa fa-google fa-lg"></i> Connect with Google
     </button>
 
-    <button (click)="signInWithGithub()" class="button btn-social btn-github" >
-      <i class="fa fa-github fa-lg"></i> Connect GitHub
+    <button (click)="signInWithGithub()" class="button btn-social btn-github" disabled>
+      <i class="fa fa-github fa-lg"></i> Connect with GitHub
     </button>
 
-    <button (click)="signInWithFacebook()" class="button  btn-social btn-facebook" >
-      <i class="fa fa-facebook fa-lg"></i> Connect Facebook
+    <button (click)="signInWithFacebook()" class="button  btn-social btn-facebook">
+      <i class="fa fa-facebook fa-lg"></i> Connect with Facebook
     </button>
 
-    <button (click)="signInWithTwitter()" class="button  btn-social btn-twitter">
-      <i class="fa fa-twitter fa-lg"></i> Connect Twitter
+    <button (click)="signInWithTwitter()" class="button  btn-social btn-twitter" disabled>
+      <i class="fa fa-twitter fa-lg"></i> Connect with Twitter
     </button>
 
     <hr>

@@ -5,5 +5,5 @@ export interface Note {
   hearts: number;
   dislike: number;
   id?: string;
-  time: Time;
+  time: any;
 }

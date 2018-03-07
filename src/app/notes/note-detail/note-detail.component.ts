@@ -38,9 +38,9 @@ export class NoteDetailComponent {
     this.noteService.deleteNote(id);
   }
 
-  timeNote(time: Time) {
-    this.noteService.timeNote(time);
-  }
+  // timeNote(time: Time) {
+  //   this.noteService.timeNote(Time);
+  // }
 
 
 
